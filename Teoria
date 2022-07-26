@@ -3,21 +3,71 @@ Explica los siguientes conceptos con tus propias palabras.
 
 
 1 - ¿Que es Math?
+Math es un objeto incluido en javascript(similar a una libreria),
+que tiene sus propiedades preestablecidas para constantes
+matematicas.
 
 2 - Explica 5 Metodos Math.
 
+Math.ceil: su usa para redondear un numero hacia arriba 
+por ejemplo: al programa se le da el numero 3.5, devuelve 4
+
+Math.floor: su usa para redondear un numero hacia abajo
+por ejemplo: al programa se le da el numero 3.12, devuelve 3
+
+Math.pow(x,y): devuelve el "x" como base y el "y" como exponenete
+haciendo una potencia.
+por ejemplo: al programa se le da Math.pow(x =3 ,y = 2) 
+devuelve 3 al cuadrado = 9
+
+Math.log: devuelve el logaritmo natural de un numero "y" de base "x"
+por ejemplo: Math.log(y = 8) / math.log(x = 2) devuelve 3
+
+Math.max devuelve el mas grande de cero o mas numernos dados 
+por parametros o NaN si no es un numero o no puede ser convertido 
+en un numero
+por ejemplo "console.log(Math.max(1, 3, 2));" devuelve "3"
+
+ 
 3 - ¿Que es un String?
+
+una string o cadena es un tipo de dato que se usa para textos
 
 4 - ¿Que es un booleano?
 
+un booleano es un tipo de dato o valor que puede ser true o false
+
 5 - ¿Que es una funcion?
+
+una funcion es una lista o conjunto de instrucciones para poder
+cumplir una tarea o hacer un calculo
 
 6 - Explica la diferencia entre Undefined y Null
 
+undefined es algo que quedo sin definir mientras que null es algo
+que quedo intencionalmente vacio.
+
 7 - ¿Cuales son los operadores de Comparacion?
+
+los operadores de comparacion son "=" igual, ">" mayor que, 
+"<" menor que , ">=" mayor o igual que , "<="menor o igual que,
+"<>" diferente de.
 
 8 - ¿Cuales son los operadores Logicos?
 
+Los operadores logicos son "&&" o "and" significan "y",
+"||" o "or" significan "o", "!" significan "no".
+
 9 - ¿A que hace referencia la palabra Clave o Key?
 
+hace referencia al identificador de un valor en un objeto,
+los objetos usan un identificador para nombrar esta clave o key
+y un valor para la misma. asi los objetos pueden contener multiples
+claves dentro del mismo, pueden teners distintos o el mismo valor
+pero estas calves no pueden repetir su nombre. 
+
 10 - ¿Para que sirve el Bucle for..in ?
+
+el bucle for...in sirve para que el programa realice una accion
+la cantidad de veces establecida o necesaria para cumplir su funcion.
+
