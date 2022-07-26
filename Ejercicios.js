@@ -48,14 +48,23 @@ function verificarPassword(password) {
 console.log(verificarPassword(1234))
 
 
-function crearGato(nombre, edad) {
+
+function crearGato(nombre, edad){
     // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
     // Agrega una propiedad al objeto con el nombre "edad" y usa el valor definido en el argumento "edad"
     // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
     // Devuelve el objeto
     // Tu código:
+    let nuevoObjeto = {nombre: nombre, edad:edad, funcion : function(){
+        console.log('meow!')
+    }};
+        
+            console.log (nuevoObjeto);
+        
     
-}
+}console.log(crearGato(['negro',3]));
+
+
 function agregarMetodoCalculoDescuento(producto) {
     // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
     // Este método debe multiplicar el "precio" del "producto" ("producto.precio" o "producto[precio]") y "porcentajeDeDescuento" para obtener el descuento
