@@ -1,22 +1,52 @@
 function Obtener(obj) {
     //Obtener y Recorrer las Llaves de un Objeto
     //Aqui tu codigo
+    let entorno = {
+        entorno: "GitHub",
+        nombre: "Juan",
+        edad: 27
+      };
+      
+      let values = Object.keys(entorno);
+      for(let i=0; i < values.length; i++){
+        let valor = values[i];
+        console.log([valor],'->',entorno[valor])
+          
+      }
 
 }
+console.log(Obtener())
 
-function Fecha(num) {
-    //Escriba una función de JavaScript para obtener el día de una fecha en particular.
+  
+
+
+let days = ['Lunes','Martes','Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+function Fecha(num){
+     //Escriba una función de JavaScript para obtener el día de una fecha en particular.
     //Aqui tu codigo
-
+let dia = new Date(num); //Miércoles
+    return(days[dia.getDay()-1]);
 }
+console.log(Fecha('02/15/1989'))
 
-function verificarPassword(usuario, password) {
+
+function verificarPassword(password) {
     // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
     // Devuelve "true" si coinciden
     // De lo contrario, devuelve "false"
     // // Tu código:
-
+    
+        var usuario = ({
+            password : 1234
+        })
+        if(password === usuario.password){
+            return true
+        }else {
+            return false
+        }
 }
+console.log(verificarPassword(1234))
+
 
 function crearGato(nombre, edad) {
     // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
@@ -24,7 +54,7 @@ function crearGato(nombre, edad) {
     // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
     // Devuelve el objeto
     // Tu código:
-
+    
 }
 function agregarMetodoCalculoDescuento(producto) {
     // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
@@ -43,3 +73,4 @@ function ordenar(array) {
     // Mostrar array ordenado.
     // Tu código:
 }
+
