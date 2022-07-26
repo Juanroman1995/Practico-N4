@@ -24,7 +24,7 @@ let days = ['Lunes','Martes','Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domi
 function Fecha(num){
      //Escriba una función de JavaScript para obtener el día de una fecha en particular.
     //Aqui tu codigo
-let dia = new Date(num); //Miércoles
+let dia = new Date(num); 
     return(days[dia.getDay()-1]);
 }
 console.log(Fecha('02/15/1989'))
