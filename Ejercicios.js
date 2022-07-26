@@ -27,7 +27,7 @@ function Fecha(num){
 let dia = new Date(num); 
     return(days[dia.getDay()-1]);
 }
-console.log(Fecha('02/15/1989'))
+console.log(Fecha('03/02/1995'))
 
 
 function verificarPassword(password) {
