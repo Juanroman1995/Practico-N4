@@ -82,6 +82,19 @@ function agregarMetodoCalculoDescuento(producto) {
     // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
     // Tu código:
 
+const Producto = {
+    precio : producto,
+    descuento : producto *0.2,
+    calcularPrecioDescuento: function(producto) {
+        let preciocondescuento = Producto.precio - Producto.descuento;
+        return preciocondescuento;
+    }
+    }
+    console.log(Producto.calcularPrecioDescuento())
+}
+
+console.log(agregarMetodoCalculoDescuento(1000000))
+
 }
 function ordenar(array) {
     // A partir del array pasado por parametros, ordenarlo (ascendente o descendente) de la forma que tu quieras
